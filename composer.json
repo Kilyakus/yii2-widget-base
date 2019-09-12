@@ -19,7 +19,7 @@
     },
     "autoload": {
         "psr-4": {
-            "kilyakus\\widgets\\": ""
+            "kilyakus\\widgets\\": "src"
         }
     }
 }
