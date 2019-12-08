@@ -3,6 +3,7 @@ namespace kilyakus\widgets;
 
 use yii\base\InvalidConfigException;
 use yii\base\Widget as YiiWidget;
+use yii\helpers\Json;
 
 class Widget extends YiiWidget implements BootstrapInterface
 {

@@ -34,7 +34,7 @@ class Config
         'radioButtonGroup',
     ];
     protected static $_validInputWidgets = [
-        '\kilyakus\select2\Select2' => ['yii2-widgets', 'yii2-widget-select2'],
+        '\select2\Select2' => ['yii2-widgets', 'yii2-widget-select2'],
         '\kilyakus\depdrop\DepDrop' => ['yii2-widgets', 'yii2-widget-depdrop'],
         '\kilyakus\range\Range' => ['yii2-widgets', 'yii2-widget-range'],
         // '\kilyakus\typeahead\Typeahead' => ['yii2-widgets', 'yii2-widget-typeahead'],
