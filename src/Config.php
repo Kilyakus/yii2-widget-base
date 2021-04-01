@@ -47,7 +47,7 @@ class Config
         // '\kilyakus\date\DatePicker' => ['yii2-widgets', 'yii2-widget-datepicker'],
         // '\kilyakus\time\TimePicker' => ['yii2-widgets', 'yii2-widget-timepicker'],
         // '\kilyakus\datetime\DateTimePicker' => ['yii2-widgets', 'yii2-widget-datetimepicker'],
-        // '\kilyakus\daterange\DateRangePicker' => 'yii2-date-range',
+        '\kilyakus\widget\daterange\DateRangePicker' => 'yii2-widget-daterange',
         // '\kilyakus\sortinput\SortableInput' => 'yii2-sortinput',
         // '\kilyakus\tree\TreeViewInput' => 'yii2-tree-manager',
         // '\kilyakus\money\MaskMoney' => 'yii2-money', // deprecated and replaced by yii2-number

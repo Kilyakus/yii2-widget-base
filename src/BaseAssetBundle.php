@@ -1,55 +1,19 @@
 <?php
-
-/**
- * @package   yii2-krajee-base
- * @author    Kartik Visweswaran <kartikv2@gmail.com>
- * @copyright Copyright &copy; Kartik Visweswaran, Krajee.com, 2014 - 2019
- * @version   2.0.5
- */
-
 namespace kilyakus\widgets;
 
 use yii\web\AssetBundle;
 
-/**
- * Base asset bundle used for all Krajee extensions.
- *
- * @author Kartik Visweswaran <kartikv2@gmail.com>
- */
 class BaseAssetBundle extends AssetBundle
 {
-    /**
-     * Unique value to set an empty asset via Yii AssetManager configuration.
-     */
     const EMPTY_ASSET = 'N0/@$$3T$';
-    /**
-     * Unique value to set an empty asset file path via Yii AssetManager configuration.
-     */
     const EMPTY_PATH = 'N0/P@T#';
-    /**
-     * Unique value identifying a Krajee asset
-     */
     const KRAJEE_ASSET = 'K3/@$$3T$';
-    /**
-     * Unique value identifying a Krajee asset file path
-     */
     const KRAJEE_PATH = 'K3/P@T#';
-    /**
-     * @inheritdoc
-     */
+
     public $js = self::KRAJEE_ASSET;
-    /**
-     * @inheritdoc
-     */
     public $css = self::KRAJEE_ASSET;
-    /**
-     * @inheritdoc
-     */
     public $sourcePath = self::KRAJEE_PATH;
 
-    /**
-     * @inheritdoc
-     */
     public function init()
     {
         parent::init();
@@ -97,12 +61,6 @@ class BaseAssetBundle extends AssetBundle
         return $this;
     }
 
-    /**
-     * Set up CSS and JS asset arrays based on the base-file names
-     *
-     * @param string $type whether 'css' or 'js'
-     * @param array $files the list of 'css' or 'js' basefile names
-     */
     protected function setupAssets($type, $files = [])
     {
         if ($this->$type === self::KRAJEE_ASSET) {
@@ -118,11 +76,6 @@ class BaseAssetBundle extends AssetBundle
         }
     }
 
-    /**
-     * Sets the source path if empty
-     *
-     * @param string $path the path to be set
-     */
     protected function setSourcePath($path)
     {
         if ($this->sourcePath === self::KRAJEE_PATH) {
