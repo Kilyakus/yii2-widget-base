@@ -2,6 +2,7 @@
     "name": "kilyakus/yii2-widget-base",
     "type": "yii2-extension",
     "license": "MIT",
+	"minimum-stability": "dev",
     "authors": [
         {
             "name": "Kartik Visweswaran",
